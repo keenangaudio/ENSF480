@@ -5,9 +5,9 @@
 
   class Shape {
     private:
+    public:
       Point origin;
       char* shapeName;
-    public:
       Shape(const Shape& source);
       ~Shape();
       Shape& operator=(const Shape& rhs);
@@ -24,12 +24,11 @@
     private:
       float side_a;
     public:
-      Square(float side, float x_, float y_, float z_, char* name);
       Square(float side, const Shape& rhs);
       float area(void);
       float perimeter(void);
       float getSideA(void);
-      void setSideA(void);
+      void setSideA(float newSide);
       void display(void);
   };
 
@@ -45,7 +44,7 @@
   };
 
 class GraphicsWorld {
-  private:
+  public:
     float x;
     float y;
     static int count;

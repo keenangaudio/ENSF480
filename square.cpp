@@ -1,25 +1,26 @@
 #include "graphics.h"
+#include <iostream>
 
-Square::Square(float side, float x_, float y_, float z_, char* name) {
-  side_a = side;
-  origin = new Point(x_, y_, z_);
-  shapeName = new char[strlen(source.shapeName)+1]
-}
-Square::Square(float side, const Shape& rhs){
-  side_a = side;
+using namespace std;
 
+Square::Square(float side, const Shape& source): Shape(source){
+  side_a = side;
 }
+
 float Square::area(void){
-
+  return side_a * side_a;
 }
 float Square::perimeter(void){
+  return 4 * side_a;
 }
 float Square::getSideA(void){
-
+  return side_a;
 }
-void Square::setSideA(void){
-
+void Square::setSideA(float newSide){
+  side_a = newSide;
 }
-void Square::display(void){
-
+void Square::display(void){ 
+  cout << "Square Name: " << shapeName << endl;
+  cout << "X-coordinate: " << origin.x << endl;
+  cout << "Y-coordinate: " << origin.y << endl;
 }
