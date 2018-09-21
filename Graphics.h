@@ -1,4 +1,5 @@
 #include "point.h"
+
 class Shape {
 private:
   Point origin;

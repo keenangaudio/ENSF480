@@ -2,18 +2,18 @@
 #include "graphics.h"
 
 
-float area(void) {
+float Rectangle::area(void) {
   return 0;
 }
-float perimeter(void) {
+float Rectangle::perimeter(void) {
   return 0;
 }
-float getSideB(void) {
+float Rectangle::getSideB(void) {
   return 0;
 }
-void setSideB(void) {
+void Rectangle::setSideB(void) {
   return 0;
 }
-void display(void) {
+void Rectangle::display(void) {
   return 0;
 }
