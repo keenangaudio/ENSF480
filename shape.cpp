@@ -12,6 +12,8 @@ Shape::Shape(const Shape& source):
     cerr << "Memory not available...";
     exit(1);
   }
+  int a;
+
 
   strcpy(shapeName, source.shapeName);
 }

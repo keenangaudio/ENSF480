@@ -1,3 +1,4 @@
+#include "point.h"
 class Shape {
 private:
   Point origin;
@@ -13,20 +14,34 @@ public:
   static double distance(Shape& the_shape, Shape& other);
   void move(double dx, double dy);
 
-}
+};
 
 class Rectangle {
-
-}
+private:
+  float side_b;
+public:
+  float area(void);
+  float perimeter(void);
+  float getSideB(void);
+  void setSideB(void);
+  void display(void);
+};
 
 class Square {
-
-}
+private:
+  float side_a;
+public:
+  float area(void);
+  float perimeter(void);
+  float getSideA(void);
+  void setSideA(void);
+  void display(void);
+};
 
 class GraphicsWorld {
 private:
   float x;
   float y;
-  static int count = 0;
+  static int count;
   int id;
-}
+};
