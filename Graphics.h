@@ -24,7 +24,8 @@
     private:
       float side_a;
     public:
-      Square(float a, Point& );
+      Square(float side, float x_, float y_, float z_, char* name);
+      Square(float side, const Shape& rhs);
       float area(void);
       float perimeter(void);
       float getSideA(void);

@@ -1,0 +1,92 @@
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:6:8: error: C++ requires a type specifier for all declarations
+Point::counter = 1000;
+       ^
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:8:52: error: reference to non-static member function must be called; did you mean to call it with no arguments?
+Point::Point(float x_, float y_, float z_): id( (++counter) ){
+                                                   ^~~~~~~
+                                                          ()
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:8:50: error: cannot increment value of type 'void'
+Point::Point(float x_, float y_, float z_): id( (++counter) ){
+                                                 ^ ~~~~~~~
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:18:12: error: return type of out-of-line definition of 'Point::counter' differs from that in the declaration
+int Point::counter(void) {
+~~~        ^
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.h:13:10: note: previous declaration is here
+    void counter(void);
+    ~~~~ ^
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:19:10: error: reference to non-static member function must be called; did you mean to call it with no arguments?
+  return counter - 1000;
+         ^~~~~~~
+                ()
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:19:18: error: invalid operands to binary expression ('void' and 'int')
+  return counter - 1000;
+         ~~~~~~~ ^ ~~~~
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:22:10: error: 'Point' does not refer to a value
+  return Point.distance(this, b);
+         ^
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.h:4:9: note: declared here
+  class Point {
+        ^
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:25:1: error: 'static' can only be specified inside the class definition
+static float Point::distance(Point a, Point b) {
+^~~~~~~
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:26:10: error: value of type 'Point' is not contextually convertible to 'bool'
+  if ( !(a && b) ) {
+         ^
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:26:12: error: invalid operands to binary expression ('Point' and 'Point')
+  if ( !(a && b) ) {
+         ~ ^  ~
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:27:52: error: expected ';' after expression
+    std::cerr << "Error in distance, null input.\n"
+                                                   ^
+                                                   ;
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:27:10: error: no member named 'cerr' in namespace 'std'
+    std::cerr << "Error in distance, null input.\n"
+    ~~~~~^
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:28:5: error: use of undeclared identifier 'exit'
+    exit(-1);
+    ^
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:32:16: error: no matching function for call to 'pow'
+  return sqrt( pow(dx) + pow(dy) );
+               ^~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/math.h:968:1: note: candidate function template not viable: requires 2 arguments, but 1 was provided
+pow(_A1 __lcpp_x, _A2 __lcpp_y) _NOEXCEPT
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/math.h:957:46: note: candidate function not viable: requires 2 arguments, but 1 was provided
+inline _LIBCPP_INLINE_VISIBILITY long double pow(long double __lcpp_x, long double __lcpp_y) _NOEXCEPT {return ::powl(__lcpp_x, __lcpp_y);}
+                                             ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/math.h:956:46: note: candidate function not viable: requires 2 arguments, but 1 was provided
+inline _LIBCPP_INLINE_VISIBILITY float       pow(float __lcpp_x, float __lcpp_y) _NOEXCEPT             {return ::powf(__lcpp_x, __lcpp_y);}
+                                             ^
+/usr/include/math.h:443:15: note: candidate function not viable: requires 2 arguments, but 1 was provided
+extern double pow(double, double);
+              ^
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:32:26: error: no matching function for call to 'pow'
+  return sqrt( pow(dx) + pow(dy) );
+                         ^~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/math.h:968:1: note: candidate function template not viable: requires 2 arguments, but 1 was provided
+pow(_A1 __lcpp_x, _A2 __lcpp_y) _NOEXCEPT
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/math.h:957:46: note: candidate function not viable: requires 2 arguments, but 1 was provided
+inline _LIBCPP_INLINE_VISIBILITY long double pow(long double __lcpp_x, long double __lcpp_y) _NOEXCEPT {return ::powl(__lcpp_x, __lcpp_y);}
+                                             ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/math.h:956:46: note: candidate function not viable: requires 2 arguments, but 1 was provided
+inline _LIBCPP_INLINE_VISIBILITY float       pow(float __lcpp_x, float __lcpp_y) _NOEXCEPT             {return ::powf(__lcpp_x, __lcpp_y);}
+                                             ^
+/usr/include/math.h:443:15: note: candidate function not viable: requires 2 arguments, but 1 was provided
+extern double pow(double, double);
+              ^
+15 errors generated.
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/shape.cpp:16:10: error: no member named 'cerr' in namespace 'std'
+    std::cerr << "Memory not available...";
+    ~~~~~^
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/shape.cpp:17:10: error: no member named 'exit' in namespace 'std'
+    std::exit(1);
+    ~~~~~^
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/shape.cpp:30:10: error: no member named 'cerr' in namespace 'std'
+    std::cerr << "Memory not availible...";
+    ~~~~~^
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/shape.cpp:31:10: error: no member named 'exit' in namespace 'std'
+    std::exit(1);
+    ~~~~~^
+4 errors generated.
