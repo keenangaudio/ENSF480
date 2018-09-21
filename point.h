@@ -1,6 +1,7 @@
 
 #ifndef POINTTTTTTTYBOI
   #define POINTTTTTTTYBOI
+
   class Point {
   private:
     float x, y, z;
@@ -8,9 +9,8 @@
     static int count;
   public:
     Point(float x, float y, float z);
-
     void display(void);
-    void counter(void);
+    int counter(void);
     float distance(Point b);
     static float distance(Point a, Point b);
   };

@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include <math.h>
 
-Point::counter = 1000;
+int Point::count = 1000;
 
-Point::Point(float x_, float y_, float z_): id( (++counter) ){
+Point::Point(float x_, float y_, float z_): id( (++count) ){
   x = x_;
   y = y_;
   z = z_;
@@ -19,10 +19,10 @@ int Point::counter(void) {
   return counter - 1000;
 }
 float Point::distance(Point b) {
-  return Point.distance(this, b);
+  return Point::distance(this, b);
 }
 
-static float Point::distance(Point a, Point b) {
+float Point::distance(Point a, Point b) {
   if ( !(a && b) ) {
     std::cerr << "Error in distance, null input.\n"
     exit(-1);
