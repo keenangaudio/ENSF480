@@ -12,8 +12,8 @@ float Rectangle::getSideB(void) {
   return 0;
 }
 void Rectangle::setSideB(void) {
-  return 0;
+  return;
 }
 void Rectangle::display(void) {
-  return 0;
+  return;
 }
