@@ -13,7 +13,6 @@ float Square::area(void){
 
 }
 float Square::perimeter(void){
-
 }
 float Square::getSideA(void){
 
