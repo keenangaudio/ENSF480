@@ -1,4 +1,5 @@
 #include "graphics.h"
+
 //TODO: make seperate files for shape.h
 Shape::~Shape(){
   delete[] shapeName;
@@ -13,6 +14,7 @@ Shape::Shape(const Shape& source):
     exit(1);
   }
   int a;
+  int b;
 
 
   strcpy(shapeName, source.shapeName);
