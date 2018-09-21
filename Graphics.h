@@ -5,6 +5,7 @@ private:
 public:
   Shape(const Shape& source);
   ~Shape();
+  Shape::operator=(const Shape& rhs);
   const Point& getOrigin();
   const char& getName();
   void display();

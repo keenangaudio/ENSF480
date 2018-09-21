@@ -1,10 +1,12 @@
 
 #include "point.h"
-#include <stdio>
+#include <stdio.h>
 #include <math.h>
 
-  Point::Point(float x, float y, float z) {
-
+  Point::Point(float x_, float y_, float z_) id(++counter){
+    x = x_;
+    y = y_;
+    z = z_;
   }
 
   void Point::display(void) {

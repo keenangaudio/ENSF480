@@ -1,3 +1,7 @@
-https://github.com/keenangaudio/ENSF480.git
+#include "graphics.h"
+#include "point.h"
+#include "mainA.h"
 
-/Users/sunnynagam/Documents/Homework/ENSF-480
+void main( void ) {
+
+}
