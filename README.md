@@ -1,2 +1,3 @@
-# ENSF480
+# ENSF480Lab2
 for class
+
