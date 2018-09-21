@@ -3,7 +3,14 @@ private:
   Point origin;
   char* shapeName;
 public:
-  Shape(Point origin, char* )
+  Shape(const Shape& source);
+  ~Shape();
+  const Point& getOrigin();
+  const char& getName();
+  void display();
+  double distance (Shape& other);
+  static double distance(Shape& the_shape, Shape& other);
+  void move(double dx, double dy);
 
 }
 

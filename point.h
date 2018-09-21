@@ -6,8 +6,8 @@ private:
 public:
   Point(float x, float y, float z);
 
-  display();
-  counter();
-  distance(Point b);
-  static distance(Point a, Point b);
+  void display(void);
+  void counter(void);
+  float distance(Point b);
+  static float distance(Point a, Point b);
 }
