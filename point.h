@@ -10,7 +10,7 @@
       Point(float x, float y, float z);
       void display(void);
       int counter(void);
-      float distance(Point b);
-      static float distance(Point a, Point b);
+      float distance(Point *b);
+      static float distance(Point *a, Point *b);
 };
 #endif

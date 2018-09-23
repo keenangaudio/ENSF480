@@ -19,7 +19,7 @@ float Square::getSideA(void){
 void Square::setSideA(float newSide){
   side_a = newSide;
 }
-void Square::display(void){ 
+void Square::display(void){
   cout << "Square Name: " << shapeName << endl;
   cout << "X-coordinate: " << origin.x << endl;
   cout << "Y-coordinate: " << origin.y << endl;
