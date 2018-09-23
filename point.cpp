@@ -16,7 +16,7 @@ void Point::display(void) {
 }
 
 int Point::counter(void) {
-  return counter - 1000;
+  return count - 1000;
 }
 float Point::distance(Point b) {
   return Point::distance(this, b);

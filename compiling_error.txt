@@ -1,35 +1,17 @@
-/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:6:8: error: C++ requires a type specifier for all declarations
-Point::counter = 1000;
-       ^
-/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:8:52: error: reference to non-static member function must be called; did you mean to call it with no arguments?
-Point::Point(float x_, float y_, float z_): id( (++counter) ){
-                                                   ^~~~~~~
-                                                          ()
-/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:8:50: error: cannot increment value of type 'void'
-Point::Point(float x_, float y_, float z_): id( (++counter) ){
-                                                 ^ ~~~~~~~
-/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:18:12: error: return type of out-of-line definition of 'Point::counter' differs from that in the declaration
-int Point::counter(void) {
-~~~        ^
-/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.h:13:10: note: previous declaration is here
-    void counter(void);
-    ~~~~ ^
-/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:19:10: error: reference to non-static member function must be called; did you mean to call it with no arguments?
-  return counter - 1000;
-         ^~~~~~~
-                ()
-/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:19:18: error: invalid operands to binary expression ('void' and 'int')
-  return counter - 1000;
-         ~~~~~~~ ^ ~~~~
-/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:22:10: error: 'Point' does not refer to a value
-  return Point.distance(this, b);
-         ^
-/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.h:4:9: note: declared here
-  class Point {
-        ^
-/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:25:1: error: 'static' can only be specified inside the class definition
-static float Point::distance(Point a, Point b) {
-^~~~~~~
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/mainA.cpp:1:10: warning: non-portable path to file '"Graphics.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "graphics.h"
+         ^~~~~~~~~~~~
+         "Graphics.h"
+1 warning generated.
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:22:17: error: no matching member function for call to 'distance'
+  return Point::distance(this, b);
+         ~~~~~~~^~~~~~~~
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.h:14:20: note: candidate function not viable: no known conversion from 'Point *' to 'Point' for 1st argument; dereference the argument with *
+      static float distance(Point a, Point b);
+                   ^
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:21:14: note: candidate function not viable: requires single argument 'b', but 2 arguments were provided
+float Point::distance(Point b) {
+             ^
 /Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/point.cpp:26:10: error: value of type 'Point' is not contextually convertible to 'bool'
   if ( !(a && b) ) {
          ^
@@ -76,7 +58,16 @@ inline _LIBCPP_INLINE_VISIBILITY float       pow(float __lcpp_x, float __lcpp_y)
 /usr/include/math.h:443:15: note: candidate function not viable: requires 2 arguments, but 1 was provided
 extern double pow(double, double);
               ^
-15 errors generated.
+8 errors generated.
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/rectangle.cpp:2:10: warning: non-portable path to file '"Graphics.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "graphics.h"
+         ^~~~~~~~~~~~
+         "Graphics.h"
+1 warning generated.
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/shape.cpp:1:10: warning: non-portable path to file '"Graphics.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "graphics.h"
+         ^~~~~~~~~~~~
+         "Graphics.h"
 /Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/shape.cpp:16:10: error: no member named 'cerr' in namespace 'std'
     std::cerr << "Memory not available...";
     ~~~~~^
@@ -89,4 +80,9 @@ extern double pow(double, double);
 /Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/shape.cpp:31:10: error: no member named 'exit' in namespace 'std'
     std::exit(1);
     ~~~~~^
-4 errors generated.
+1 warning and 4 errors generated.
+/Users/keenangaudio/Documents/School/ENSF480/ENSF480Lab2/square.cpp:1:10: warning: non-portable path to file '"Graphics.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "graphics.h"
+         ^~~~~~~~~~~~
+         "Graphics.h"
+1 warning generated.
