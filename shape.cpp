@@ -9,6 +9,10 @@ Shape::~Shape(){
   delete[] shapeName;
 }
 
+Shape::Shape(int x, int y, const char* _shapeName) : origin( Point(x,y) ) {
+  strcpy(shapeName, _shapeName);
+}
+
 Shape::Shape(const Shape& source):
                         origin(source.origin),
                         shapeName(new char[strlen(source.shapeName)+1]) {

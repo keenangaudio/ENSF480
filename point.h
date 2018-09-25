@@ -7,6 +7,7 @@
       float x, y;
       int id;
       static int count;
+      Point(const Point &other);
       Point(float x, float y);
       void setx(float newX);
       void sety(float newY);

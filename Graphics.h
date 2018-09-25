@@ -9,6 +9,8 @@
       Point origin;
       char* shapeName;
       Shape(const Shape& source);
+
+      Shape(int x, int y, const char* _shapeName);
       ~Shape();
       Shape& operator=(const Shape& rhs);
       const Point& getOrigin();
@@ -17,6 +19,7 @@
       double distance (Shape& other);
       static double distance(Shape& the_shape, Shape& other);
       void move(double dx, double dy);
+
       //;
   };
 
@@ -24,7 +27,7 @@
     private:
     public:
       float side_a;
-      Square(float side, const Shape& rhs);
+      Square(float x, float y, float side, const char* name);
       float area(void);
       float perimeter(void);
       float getSideA(void);

@@ -5,7 +5,10 @@
 #include <math.h>
 
 int Point::count = 1000;
-
+Point::Point(const Point &other) : id( (++count) ){
+  x = other.x;
+  y = other.y;
+}
 Point::Point(float x_, float y_): id( (++count) ){
   x = x_;
   y = y_;
@@ -20,7 +23,7 @@ int Point::counter(void) {
 }
 
 float Point::distance(Point& a, Point& b) {
-  // if ( !(a!=NULL && b!=NULL) ) {                       // TODO: Fix this 
+  // if ( !(a!=NULL && b!=NULL) ) {                       // TODO: Fix this
   //   std::cerr << "Error in distance, null input.\n";
   //   exit(-1);
   // }
