@@ -18,16 +18,23 @@ void Point::display(void) {
 int Point::counter(void) {
   return count - 1000;
 }
-float Point::distance(Point *b) {
-  return distance(this, b);
+
+float Point::distance(Point& a, Point& b) {
+  // if ( !(a!=NULL && b!=NULL) ) {                       // TODO: Fix this 
+  //   std::cerr << "Error in distance, null input.\n";
+  //   exit(-1);
+  // }
+  float dx = b.x - a.x;
+  float dy = b.y - a.y;
+  return sqrt( pow(dx,2) + pow(dy,2) );
+}
+float Point::distance(Point& b) {
+  return Point::distance(*this, b);
 }
 
-float Point::distance(Point *a, Point *b) {
-  if ( !(a && b) ) {
-    std::cerr << "Error in distance, null input.\n";
-    exit(-1);
-  }
-  float dx = b->x - a->x;
-  float dy = b->y - a->y;
-  return sqrt( pow(dx,2) + pow(dy,2) );
+void Point::setx(float newX){
+  x = newX;
+}
+void Point::sety(float newY){
+  y = newY;
 }

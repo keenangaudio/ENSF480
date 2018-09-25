@@ -1,5 +1,6 @@
 
-#include "graphics.h"
+#include "Graphics.h"
+#include <iostream>
 
 
 float Rectangle::area(void) {
@@ -15,10 +16,10 @@ void Rectangle::setSideB(float newSide) {
   side_b = newSide;
 }
 void Rectangle::display(void) {
-  printf("Rectangle Name: %s\n", &shapeName);
+  printf("Rectangle Name: %s\n", shapeName);
   origin.display();
-  printf("Side a: %d\n", side_a);
-  printf("Side b: %d\n", side_b);
-  printf("Area: %d\n", this.area());
-  printf("Perimeter: %d\n", this.perimeter());
+  printf("Side a: %f\n", side_a);
+  printf("Side b: %f\n", side_b);
+  printf("Area: %f\n", area());
+  printf("Perimeter: %f\n", perimeter());
 }

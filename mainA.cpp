@@ -3,8 +3,10 @@
 #include "mainA.h"
 #include <iostream>
 
+using namespace std;
+
 int main( void ) {
 
-  printf("Hello world\n");
+  GraphicsWorld::run();
   return 0;
 }

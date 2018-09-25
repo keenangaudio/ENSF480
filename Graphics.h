@@ -12,7 +12,7 @@
       ~Shape();
       Shape& operator=(const Shape& rhs);
       const Point& getOrigin();
-      const char& getName();
+      const char* getName();
       void display();
       double distance (Shape& other);
       static double distance(Shape& the_shape, Shape& other);
@@ -22,8 +22,8 @@
 
   class Square : public Shape {
     private:
-      float side_a;
     public:
+      float side_a;
       Square(float side, const Shape& rhs);
       float area(void);
       float perimeter(void);
