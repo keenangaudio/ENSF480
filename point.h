@@ -4,10 +4,10 @@
 
   class Point {
     public:
-      float x, y, z;
+      float x, y;
       int id;
       static int count;
-      Point(float x, float y, float z);
+      Point(float x, float y);
       void display(void);
       int counter(void);
       float distance(Point *b);

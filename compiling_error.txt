@@ -1,5 +1,135 @@
-Undefined symbols for architecture x86_64:
-  "_main", referenced from:
-     implicit entry/start for main executable
-ld: symbol(s) not found for architecture x86_64
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/graphicsWorld.cpp:12:5: error: no member named 'setx' in 'Point'
+  n.setx(9);
+  ~ ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/graphicsWorld.cpp:13:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+  cout << "\nExpected to dispaly the distance between m and n is: 3";
+  ^~~~
+  std::cout
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iostream:54:33: note: 'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/graphicsWorld.cpp:14:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+  cout << "\nThe distance between m and n is: " << m.distance(n);
+  ^~~~
+  std::cout
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iostream:54:33: note: 'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/graphicsWorld.cpp:14:54: error: no matching member function for call to 'distance'
+  cout << "\nThe distance between m and n is: " << m.distance(n);
+                                                   ~~^~~~~~~~
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/point.h:13:13: note: candidate function not viable: no known conversion from 'Point' to 'Point *' for 1st argument; take the address of the argument with &
+      float distance(Point *b);
+            ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/point.h:14:20: note: candidate function not viable: requires 2 arguments, but 1 was provided
+      static float distance(Point *a, Point *b);
+                   ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/graphicsWorld.cpp:15:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+  cout << "\nExpected second version of the distance function also print: 3"; cout << "\nThe distance between m and n is again: "
+  ^~~~
+  std::cout
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iostream:54:33: note: 'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/graphicsWorld.cpp:15:79: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+  cout << "\nExpected second version of the distance function also print: 3"; cout << "\nThe distance between m and n is again: "
+                                                                              ^~~~
+                                                                              std::cout
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iostream:54:33: note: 'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/graphicsWorld.cpp:16:6: error: no matching function for call to 'distance'
+  << Point::distance(m, n);
+     ^~~~~~~~~~~~~~~
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/point.h:14:20: note: candidate function not viable: no known conversion from 'Point' to 'Point *' for 1st argument; take the address of the argument with &
+      static float distance(Point *a, Point *b);
+                   ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/point.h:13:13: note: candidate function not viable: requires single argument 'b', but 2 arguments were provided
+      float distance(Point *b);
+            ^
+7 errors generated.
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/rectangle.cpp:2:10: warning: non-portable path to file '"Graphics.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "graphics.h"
+         ^~~~~~~~~~~~
+         "Graphics.h"
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/rectangle.cpp:6:10: error: 'side_a' is a private member of 'Square'
+  return side_a * side_b;
+         ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/graphics.h:25:13: note: declared private here
+      float side_a;
+            ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/rectangle.cpp:9:14: error: 'side_a' is a private member of 'Square'
+  return 2 * side_a + 2 * side_b;
+             ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/graphics.h:25:13: note: declared private here
+      float side_a;
+            ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/rectangle.cpp:18:3: error: use of undeclared identifier 'printf'
+  printf("Rectangle Name: %s\n", &shapeName);
+  ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/rectangle.cpp:20:26: error: 'side_a' is a private member of 'Square'
+  printf("Side a: %d\n", side_a);
+                         ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/graphics.h:25:13: note: declared private here
+      float side_a;
+            ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/rectangle.cpp:20:3: error: use of undeclared identifier 'printf'
+  printf("Side a: %d\n", side_a);
+  ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/rectangle.cpp:21:3: error: use of undeclared identifier 'printf'
+  printf("Side b: %d\n", side_b);
+  ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/rectangle.cpp:22:28: error: member reference type 'Rectangle *' is a pointer; did you mean to use '->'?
+  printf("Area: %d\n", this.area());
+                       ~~~~^
+                           ->
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/rectangle.cpp:22:3: error: use of undeclared identifier 'printf'
+  printf("Area: %d\n", this.area());
+  ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/rectangle.cpp:23:33: error: member reference type 'Rectangle *' is a pointer; did you mean to use '->'?
+  printf("Perimeter: %d\n", this.perimeter());
+                            ~~~~^
+                                ->
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/rectangle.cpp:23:3: error: use of undeclared identifier 'printf'
+  printf("Perimeter: %d\n", this.perimeter());
+  ^
+1 warning and 10 errors generated.
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/shape.cpp:7:7: error: redefinition of 'Shape'
+class Shape{
+      ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/Graphics.h:6:9: note: previous definition is here
+  class Shape {
+        ^
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/shape.cpp:74:2: error: expected ';' after class
+}
+ ^
+ ;
+2 errors generated.
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/square.cpp:1:10: warning: non-portable path to file '"Graphics.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "graphics.h"
+         ^~~~~~~~~~~~
+         "Graphics.h"
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/square.cpp:23:31: warning: format specifies type 'char *' but the argument has type 'char **' [-Wformat]
+  printf("Square Name: %s\n", &shapeName);
+                       ~~     ^~~~~~~~~~
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/square.cpp:25:26: warning: format specifies type 'int' but the argument has type 'float' [-Wformat]
+  printf("Side a: %d\n", side_a);
+                  ~~     ^~~~~~
+                  %f
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/square.cpp:26:28: error: member reference type 'Square *' is a pointer; did you mean to use '->'?
+  printf("Area: %d\n", this.area());
+                       ~~~~^
+                           ->
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/square.cpp:26:24: warning: format specifies type 'int' but the argument has type 'float' [-Wformat]
+  printf("Area: %d\n", this.area());
+                ~~     ^~~~~~~~~~~
+                %f
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/square.cpp:27:33: error: member reference type 'Square *' is a pointer; did you mean to use '->'?
+  printf("Perimeter: %d\n", this.perimeter());
+                            ~~~~^
+                                ->
+/Users/sunnynagam/Documents/Homework/ENSF-480/Lab2/square.cpp:27:29: warning: format specifies type 'int' but the argument has type 'float' [-Wformat]
+  printf("Perimeter: %d\n", this.perimeter());
+                     ~~     ^~~~~~~~~~~~~~~~
+                     %f
+5 warnings and 2 errors generated.

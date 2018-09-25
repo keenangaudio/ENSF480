@@ -39,15 +39,12 @@
       float area(void);
       float perimeter(void);
       float getSideB(void);
-      void setSideB(void);
+      void setSideB(float newSide);
       void display(void);
   };
 
 class GraphicsWorld {
   public:
-    float x;
-    float y;
-    static int count;
-    int id;
+    static void run(void);
 };
 #endif

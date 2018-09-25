@@ -20,7 +20,9 @@ void Square::setSideA(float newSide){
   side_a = newSide;
 }
 void Square::display(void){
-  cout << "Square Name: " << shapeName << endl;
-  cout << "X-coordinate: " << origin.x << endl;
-  cout << "Y-coordinate: " << origin.y << endl;
+  printf("Square Name: %s\n", &shapeName);
+  origin.display();
+  printf("Side a: %d\n", side_a);
+  printf("Area: %d\n", this.area());
+  printf("Perimeter: %d\n", this.perimeter());
 }

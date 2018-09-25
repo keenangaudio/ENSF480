@@ -6,14 +6,13 @@
 
 int Point::count = 1000;
 
-Point::Point(float x_, float y_, float z_): id( (++count) ){
+Point::Point(float x_, float y_): id( (++count) ){
   x = x_;
   y = y_;
-  z = z_;
 }
 
 void Point::display(void) {
-  printf("X-COORDINATE: %6.2f\nY-COORDINATE: %6.2f\n", x, y);
+  printf("X-coordinate: %6.2f\nY-coordinate: %6.2f\n", x, y);
 }
 
 int Point::counter(void) {
