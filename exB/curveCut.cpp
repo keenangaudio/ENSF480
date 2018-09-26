@@ -6,7 +6,8 @@ using namespace std;
 
 CurveCut::CurveCut(float x, float y, float sideA, float sideB, float rad,  const char* name)
   : Rectangle(x, y, sideA, sideB, name)
-  , Circle(x, y, rad, name){
+  , Circle(x, y, rad, name)
+  , Shape(x, y, name) {
     // Hmmmmmm
     if(radius > sideA || radius > sideB){
       std::cerr<<"Error, radius of curvecut larger than side lengths\n";

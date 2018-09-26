@@ -47,7 +47,7 @@
       void display(void);
   };
 
-  class Rectangle : virtual public Square {
+  class Rectangle : public Square {
     private:
     public:
       float side_b;

@@ -3,11 +3,13 @@
 #include <iostream>
 
 Rectangle::Rectangle(float x, float y, float sideA, float sideB, const char* name)
-  : Square(x,y,sideA,name){
+  : Square(x, y, sideA, name)
+  , Shape(x, y, name) {
   side_b = sideB;
 }
 Rectangle::Rectangle(const Rectangle& source)
-  : Square(source.origin.x, source.origin.y, source.side_a, source.shapeName){
+  : Square(source.origin.x, source.origin.y, source.side_a, source.shapeName)
+  , Shape(source.origin.x, source.origin.y, source.shapeName){
   side_b = source.getSideB();
 }
 float Rectangle::area(void) {
