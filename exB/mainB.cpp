@@ -1,6 +1,6 @@
 #include "Graphics.h"
 #include "point.h"
-#include "mainA.h"
+#include "mainB.h"
 #include <iostream>
 
 using namespace std;

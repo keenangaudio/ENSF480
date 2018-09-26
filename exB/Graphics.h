@@ -2,7 +2,7 @@
 #ifndef GRAPHICSBOI
   #define GRAPHICSBOI
   #include "point.h"
-
+//TODO: make stuff private if we have to
   class Shape {
     private:
     public:
@@ -23,7 +23,7 @@
       //;
   };
 
-  class Square : public Shape {
+  class Square : virtual public Shape {
     private:
     public:
       float side_a;
@@ -35,16 +35,37 @@
       void display(void);
   };
 
-  class Rectangle : public Square {
+  class Circle : virtual public Shape {
     private:
-      float side_b;
     public:
+      float radius;
+      Circle(float x, float y, float rad, const char* name);
+      float area(void);
+      float perimeter(void);
+      float getRadius(void);
+      void setRadius(float newRadius);
+      void display(void);
+  };
+
+  class Rectangle : virtual public Square {
+    private:
+    public:
+      float side_b;
       Rectangle(float x, float y, float sideA, float sideB, const char* name);
       Rectangle(const Rectangle& source);
       float area(void);
       float perimeter(void);
       float getSideB(void) const;
       void setSideB(float newSide);
+      void display(void);
+  };
+
+  class CurveCut : public Circle, public Rectangle {
+    private:
+    public:
+      CurveCut(float x, float y, float sideA, float sideB, float rad,  const char* name);
+      float area(void);
+      float perimeter(void);
       void display(void);
   };
 
