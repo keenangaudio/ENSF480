@@ -15,6 +15,8 @@
       Shape& operator=(const Shape& rhs);
       const Point& getOrigin();
       const char* getName();
+      virtual float area(void);
+      virtual float perimeter(void);
       void display();
       double distance (Shape& other);
       static double distance(Shape& the_shape, Shape& other);
