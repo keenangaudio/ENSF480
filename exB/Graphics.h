@@ -17,7 +17,7 @@
       const char* getName();
       virtual float area(void);
       virtual float perimeter(void);
-      void display();
+      virtual void display();
       double distance (Shape& other);
       static double distance(Shape& the_shape, Shape& other);
       void move(double dx, double dy);

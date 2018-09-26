@@ -29,6 +29,4 @@ void CurveCut::display(void){
   printf("Width: %f\n", side_a);
   printf("Height: %f\n", side_b);
   printf("Radius: %f\n", radius);
-  printf("Area: %f\n", area());
-  printf("Perimeter: %f\n", perimeter());
 }

@@ -25,6 +25,4 @@ void Circle::display(void){
   printf("Circle Name: %s\n", shapeName);
   origin.display();
   printf("Radius: %f\n", radius);
-  printf("Area: %f\n", this->area());
-  printf("Perimeter: %f\n", this->perimeter());
 }
