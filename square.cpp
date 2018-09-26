@@ -5,7 +5,6 @@ using namespace std;
 
 Square::Square(float x, float y, float side, const char* name) : Shape(x, y, name) {
   //init shape and origin
-
   side_a = side;
 }
 

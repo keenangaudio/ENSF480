@@ -2,14 +2,21 @@
 #include "Graphics.h"
 #include <iostream>
 
-
+Rectangle::Rectangle(float x, float y, float sideA, float sideB, const char* name)
+  : Square(x,y,sideA,name){
+  side_b = sideB;
+}
+Rectangle::Rectangle(const Rectangle& source)
+  : Square(source.origin.x, source.origin.y, source.side_a, source.shapeName){
+  side_b = source.getSideB();
+}
 float Rectangle::area(void) {
   return side_a * side_b;
 }
 float Rectangle::perimeter(void) {
   return 2 * side_a + 2 * side_b;
 }
-float Rectangle::getSideB(void) {
+float Rectangle::getSideB(void) const{
   return side_b;
 }
 void Rectangle::setSideB(float newSide) {

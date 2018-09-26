@@ -10,6 +10,7 @@ Shape::~Shape(){
 }
 
 Shape::Shape(int x, int y, const char* _shapeName) : origin( Point(x,y) ) {
+  shapeName = new char[(int)strlen(_shapeName)];
   strcpy(shapeName, _shapeName);
 }
 

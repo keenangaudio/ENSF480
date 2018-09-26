@@ -39,9 +39,11 @@
     private:
       float side_b;
     public:
+      Rectangle(float x, float y, float sideA, float sideB, const char* name);
+      Rectangle(const Rectangle& source);
       float area(void);
       float perimeter(void);
-      float getSideB(void);
+      float getSideB(void) const;
       void setSideB(float newSide);
       void display(void);
   };
