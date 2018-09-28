@@ -8,6 +8,7 @@ Circle::Circle(float x, float y, float rad, const char* name) : Shape(x, y, name
   //init shape and origin
   radius = rad;
 }
+Circle::~Circle(){}
 
 float Circle::area(void){
   return M_PI * radius * radius;

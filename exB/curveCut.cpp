@@ -14,7 +14,7 @@ CurveCut::CurveCut(float x, float y, float sideA, float sideB, float rad,  const
       exit(1);
     }
 }
-
+CurveCut::~CurveCut(){}
 float CurveCut::area(void){
   return Rectangle::area() - (Circle::area() / 4.0);
 }

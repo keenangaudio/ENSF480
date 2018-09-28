@@ -30,6 +30,7 @@
     public:
       float side_a;
       Square(float x, float y, float side, const char* name);
+      ~Square();
       float area(void);
       float perimeter(void);
       float getSideA(void);
@@ -42,6 +43,7 @@
     public:
       float radius;
       Circle(float x, float y, float rad, const char* name);
+      ~Circle();
       float area(void);
       float perimeter(void);
       float getRadius(void);
@@ -55,6 +57,7 @@
       float side_b;
       Rectangle(float x, float y, float sideA, float sideB, const char* name);
       Rectangle(const Rectangle& source);
+      ~Rectangle();
       float area(void);
       float perimeter(void);
       float getSideB(void) const;
@@ -66,6 +69,7 @@
     private:
     public:
       CurveCut(float x, float y, float sideA, float sideB, float rad,  const char* name);
+      ~CurveCut();
       float area(void);
       float perimeter(void);
       void display(void);

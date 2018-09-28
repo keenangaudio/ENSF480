@@ -7,7 +7,7 @@ Square::Square(float x, float y, float side, const char* name) : Shape(x, y, nam
   //init shape and origin
   side_a = side;
 }
-
+Square::~Square(){}
 float Square::area(void){
   return side_a * side_a;
 }
