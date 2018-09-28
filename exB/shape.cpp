@@ -72,8 +72,8 @@ double Shape::distance(Shape& the_shape, Shape& other){
   float dy = other.getOrigin().y - the_shape.getOrigin().y;
   return sqrt( pow(dx,2) + pow(dy,2) );
 }
-float Shape::area(){};
-float Shape::perimeter(){};
+float Shape::area() { return 0; };
+float Shape::perimeter() { return 0; };
 void Shape::move(double dx, double dy){
   origin.x += dx;
   origin.y += dy;

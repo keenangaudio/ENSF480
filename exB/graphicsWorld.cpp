@@ -84,7 +84,7 @@ sh [0]->display(); sh [1]->display(); sh [2]->display(); sh [3]->display();
   sh [3] = &rc;
   sh [0]->display();
   cout << "\nthe area of "<< sh[0]->getName() << "is: "<< sh[0]->area()<< endl;
-  cout << "\nthe perimeter of " << sh[0]->getName () << " is: "<< sh[0]->perimeter();<< endl;
+  cout << "\nthe perimeter of " << sh[0]->getName () << " is: "<< sh[0]->perimeter()<< endl;
   sh [1]->display();
   cout << "\nthe area of "<< sh[1]->getName() << "is: "<< sh[1] ->area()<< endl;
   cout << "\nthe perimeter of " << sh[0]->getName () << " is: "<< sh[1]->perimeter()<< endl;

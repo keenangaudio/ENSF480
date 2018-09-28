@@ -16,7 +16,7 @@ CurveCut::CurveCut(float x, float y, float sideA, float sideB, float rad,  const
 }
 
 float CurveCut::area(void){
-  return Rectangle::area() - Circle::area();
+  return Rectangle::area() - (Circle::area() / 4.0);
 }
 float CurveCut::perimeter(void){
   return 2 * (side_a - 2 * radius)
