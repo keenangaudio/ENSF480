@@ -28,6 +28,7 @@
     public:
       float side_a;
       Square(float x, float y, float side, const char* name);
+      ~Square();
       float area(void);
       float perimeter(void);
       float getSideA(void);
@@ -41,6 +42,7 @@
     public:
       Rectangle(float x, float y, float sideA, float sideB, const char* name);
       Rectangle(const Rectangle& source);
+      ~Rectangle();
       float area(void);
       float perimeter(void);
       float getSideB(void) const;

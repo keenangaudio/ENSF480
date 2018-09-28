@@ -10,6 +10,7 @@ Rectangle::Rectangle(const Rectangle& source)
   : Square(source.origin.x, source.origin.y, source.side_a, source.shapeName){
   side_b = source.getSideB();
 }
+Rectangle::~Rectangle(){}
 float Rectangle::area(void) {
   return side_a * side_b;
 }
